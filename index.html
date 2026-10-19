@@ -1,4 +1,56 @@
-<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex, nofollow"><title>Hearth</title>
-<style>body{margin:0;min-height:100vh;display:grid;place-items:center;background:#ece5d8;color:#1c1712;font:16px/1.5 system-ui,sans-serif;text-align:center;padding:24px}main{max-width:28rem}h1{font-weight:500;font-size:1.6rem;margin:0 0 .5rem}p{margin:.25rem 0;color:#4a4036}</style></head>
-<body><main><h1>Hearth</h1><p>The web app is being set up at this address.</p><p>Questions: hello@hearthqiw.online</p></main></body></html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Pinch-zoom stays ON (WCAG 1.4.4): no maximum-scale and no user-scalable=no. The reason it used to be off, iOS Safari zooming in when a
+         text field under 16px is tapped, is handled by the rule on input and textarea below, and the audit fails on any field under 16px. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- iPhone "Add to Home Screen": Hearth's icon, and it opens full screen like an installed app -->
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Hearth" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <title>Hearth</title>
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <meta name="theme-color" content="#ece5d8" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="description" content="Hearth: a warm, quiet place for faith in everyday life. Beta." />
+    <!-- The `react-native-web` recommended style reset: https://necolas.github.io/react-native-web/docs/setup/#root-element -->
+    <style id="expo-reset">
+      /* These styles make the body full-height */
+      html,
+      body {
+        height: 100%;
+        background-color: #ece5d8; /* Hearth parchment, so loading never flashes white */
+      }
+      /* These styles disable body scrolling if you are using <ScrollView> */
+      body {
+        overflow: hidden;
+      }
+      /* These styles make the root element full-height */
+      #root {
+        display: flex;
+        height: 100%;
+        flex: 1;
+      }
+    </style>
+    <style id="hearth-web">
+      /* iOS Safari zooms the page when a text field under 16px gets focus. Fields are 15px in the app; on the web they are 16px, so a tap never zooms. */
+      input,
+      textarea {
+        font-size: 16px !important;
+      }
+    </style>
+  <link rel="icon" href="/favicon.ico"/></head>
+
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <!-- The root element for your Expo app. -->
+    <div id="root"></div>
+  <script src="/_expo/static/js/web/entry-687a07106a816ab5d702398dbb5ed3cc.js" defer></script>
+</body>
+</html>

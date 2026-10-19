@@ -1,0 +1,11 @@
+{
+  "app": "Hearth",
+  "version": "2.0.0",
+  "commit": "f1c3064",
+  "branch": "v2-build",
+  "dirty": false,
+  "builtAt": "2026-10-19T03:00:29.213Z",
+  "backend": "hearth-dev",
+  "path": "/",
+  "domain": "app.hearthqiw.online"
+}
